@@ -1,11 +1,19 @@
+//Vendor
+@import "vendor/_normalize.scss";
+
 //Modules and Variables
-@import "partials/base";
+@import "modules/_all.scss";
+@import "modules/_colors.scss";
+@import "modules/_utility.scss";
+@import "partials/_base.scss";
+@import "partials/_buttons.scss";
+@import "partials/_typography.scss";
 
 //Partials
-@import "partials/typography";
-@import "partials/buttons";
+@import "partials/_typography.scss";
+@import "partials/_buttons.scss";
 
 //Sections
+@import "sections/_login.scss";
+@import "sections/_calculators.scss";
 
-
-//Third-party

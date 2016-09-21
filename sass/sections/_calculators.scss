@@ -1,0 +1,27 @@
+body{
+	fieldset{
+		width: 30%;
+		margin: auto;
+		position: relative;
+		top: 200px;
+		background-color: $white;
+		.head{
+			text-align: center;
+			margin-bottom: 10px;
+		}
+		form{
+			text-align: right;
+			.title{
+				/*float: left;*/
+				width: 100px;
+				text-align: right;
+				padding-right: 10px;
+			}
+			input{
+				margin-right: 60px;
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+

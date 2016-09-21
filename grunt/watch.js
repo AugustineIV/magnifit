@@ -7,11 +7,11 @@ module.exports={
         tasks: ['htmlhint']
     },
     sass: {
-        files: ['src/sass/**/*.scss'],
+        files: ['sass/**/*.scss'],
         tasks: ['sass', 'cssmin']
     },
     js: {
-        files: ['src/js/**/*.js'],
+        files: ['js/**/*.js'],
         tasks: ['jshint', 'uglify']
     }
 }
