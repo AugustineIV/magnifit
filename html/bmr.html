@@ -11,12 +11,23 @@
 				<!--<input type="radio" name="unit" value="metric" checked="checked">Metric
 				<input type="radio" name="unit" value="imperial">Imperial
 				<br/>-->
-				<label>Age:</label> <input type="number" name="age" required="required" min="0" max="100"/>
-				<label>Weight:</label> <input type="number" name="weight" required="required" min="0" max="200"/>
+				<label>Age:</label> <input id="age" type="number" name="age" required="required" min="0" max="100"/>
+				<label>Weight:</label> <input id="height" type="number" name="weight" required="required" min="0" max="200"/>
 				<br/>
-				<label>Height: <input type="number" name="height" required="required" min="0" max ="10" step="0.1"/></label>
+				<label>Height: <input id="weight" type="number" name="height" required="required" min="0" max ="10" step="0.1"/></label>
 				<br/>
-				<input type="submit" value="Calculate">
+				<input type="submit" value="Calculate" onclick="calculateBMR()">
+				<script>
+				function calculateBMR(){
+					var age=document.getElementById('age').value;
+					var height=document.getElementById('height').value;
+					var weight=document.getElementById('weight').value;
+					bmr=(10*weight)+(6.25*height)-(5*age)-161;
+					//var result=document.getElementById('result');
+					alert("Your BMR is:" + bmr);
+					//result.textContent='Your BMI is:' + bmi;
+				}
+				</script>
 			</form>
 		</fieldset>
 	</body>
