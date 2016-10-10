@@ -25,12 +25,12 @@
 					var weight=document.getElementById('weight').value;
 					if(document.getElementById('gender').checked)
 					{
-						bmr=(10*weight)+(6.25*height)-(5*age)+5;
+						bmr=10*weight+6.25*height-5*age+5;
 						alert("Your BMR is:" + bmr);
 					}
 					else
 					{
-						bmr=(10*weight)+(6.25*height)-(5*age)-161;
+						bmr=10*weight+6.25*height-5*age-161;
 						alert("Your BMR is:" + bmr);
 					}	
 				}
